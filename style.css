@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --green: #3D8168;
+    --font-size: 14px
+}
+
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat';
+    font-size: var(--font-size);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 600px;
+    height: 452px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.card img {
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.category {
+    margin-top: 30px;
+    margin-left: 30px;
+    letter-spacing: 3.5px;
+    color: var(--dark-grayish-blue);
+}
+
+.right {
+    padding-right: 40px;
+}
+
+.product-name {
+    font-family: 'Fraunces';
+    margin-top: 20px;
+    margin-left: 31px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 32px;
+    color: var(--green);
+
+}
+
+.product-desc {
+    margin-top: 23px;
+    margin-left: 31px;
+    line-height: 23px;
+    color: var(--dark-grayish-blue);
+}
+
+.sale-price {
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--green);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-left: 31px;
+    margin-top: 24px;
+    justify-content: space-between;
+    padding-right: 36px;
+}
+
+.full-price {
+    text-decoration: line-through;
+    letter-spacing: -0.5px;
+    color: var(--dark-grayish-blue);
+}
+
+button {
+    background-color: var(--green);
+    color: var(--white);
+    margin-top: 25px;
+    margin-left: 31px;
+    width: 238px;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+button span {
+    padding-left: 7px;
+}
